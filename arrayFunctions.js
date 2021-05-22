@@ -9,12 +9,14 @@
  * isArrayLengthOdd([1, 2, 3, 4]) -> flase
  */
 function isArrayLengthOdd(numbers) {
-  if(numbers.length%2 === 0) return false
+  if(numbers.length%2 === 0) {
+    return false
+  }
   else return true
-  
-  // Your code here
-
 }
+  // Your code here
+ 
+
 
 /**
  * isArrayLengthEven(numbers):
@@ -27,8 +29,9 @@ function isArrayLengthOdd(numbers) {
  * isArrayLengthEven([1, 2, 3, 4]) -> true
  */
 function isArrayLengthEven(numbers) {
-  if (numbers.length%2 === 0) return true
-  else return false
+  if (numbers.length%2 === 0) {
+    return true
+  } else return false
   // Your code here
 
 }
@@ -41,9 +44,14 @@ function isArrayLengthEven(numbers) {
  * e.g.
  * addLailaToArray(["Mshary", "Hasan"]) -> ["Mshary", "Hasan", "Laila"]
  */
+
+
 function addLailaToArray(instructors) {
-console.log (instructors);
-instructors.push(["Laila"]);
+    console.log(instructors)
+     instructors.push("Laila") 
+     return instructors
+     
+     
   // Your code here
 }
 
@@ -92,13 +100,14 @@ else return []
  * - Use string method .endsWith()
  */
 function youGottaCalmDown(shout) {
-  console.log(`shout`)
   if (shout.endsWith("!")) {
-    return shout.slice(0 ,shout.indexOf("!"))
+    return shout.slice(0, shout.indexOf("!") + 1);
+  } else {
+    return shout;
   }
-return shout
-  // Your code here
 }
+  // Your code here
+
 
 module.exports = {
   isArrayLengthOdd,
